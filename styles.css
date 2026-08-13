@@ -87,7 +87,7 @@ h3 {
 .mh {
   font: 58px / 1 Georgia, serif;
   color: #f799b7;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .brand-title {
@@ -327,6 +327,7 @@ h3 {
   border-radius: 4px;
   overflow: hidden;
   min-height: 390px;
+  background: #f6e8ec url("/assets/dr-meriem-consultation.png") center / cover no-repeat;
   box-shadow: 0 14px 40px rgba(40, 14, 25, 0.08);
 }
 
@@ -782,12 +783,16 @@ h3 {
 
 @media (max-width: 520px) {
   .nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
     height: auto;
-    gap: 10px;
-    padding: 22px 86px 12px 0;
+    align-items: start;
+    gap: 8px;
+    padding: 18px 0 12px;
   }
 
   .brand {
+    grid-column: 1;
     flex: 1 1 auto;
     min-width: 0;
     max-width: 100%;
@@ -802,6 +807,7 @@ h3 {
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .navlinks {
@@ -809,9 +815,10 @@ h3 {
   }
 
   .lang-switch {
-    position: fixed;
-    top: 14px;
-    right: 14px;
+    grid-column: 2;
+    position: relative;
+    justify-self: end;
+    align-self: start;
     flex: 0 0 auto;
     font-size: 11px;
     z-index: 40;
@@ -852,8 +859,9 @@ h3 {
   .services h2,
   .journey h2,
   .cta h2 {
-    max-width: calc(100vw - 36px);
-    overflow-wrap: anywhere;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
   .lead {
@@ -887,7 +895,8 @@ h3 {
   .about h2,
   .services h2,
   .journey h2 {
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 1.12;
   }
 
   .cards {
@@ -895,6 +904,23 @@ h3 {
   }
 
   .cta h2 {
-    font-size: 38px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .about h2,
+  .services h2,
+  .journey h2 {
+    font-size: 30px;
+  }
+
+  .lang-switch a {
+    min-width: 28px;
+    padding: 5px 7px;
   }
 }
