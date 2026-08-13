@@ -809,11 +809,14 @@ h3 {
   }
 
   .lang-switch {
-    position: absolute;
-    top: 22px;
-    right: 0;
+    position: fixed;
+    top: 14px;
+    right: 14px;
     flex: 0 0 auto;
     font-size: 11px;
+    z-index: 40;
+    background: rgba(18, 9, 14, 0.94);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
   }
 
   .lang-switch a {
@@ -828,9 +831,20 @@ h3 {
   }
 
   .about-copy,
+  .about-grid,
   .services-head,
   .journey-grid,
+  .journey-panels,
+  .shell,
   .cta {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-grid > *,
+  .journey-grid > *,
+  .cards > * {
     min-width: 0;
   }
 
