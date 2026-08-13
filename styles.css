@@ -781,6 +781,25 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .brand > div:last-child {
+    min-width: 0;
+  }
+
+  .brand-sub {
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
   .navlinks {
     display: none;
   }
