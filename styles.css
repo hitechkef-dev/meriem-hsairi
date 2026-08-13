@@ -782,11 +782,15 @@ h3 {
 
 @media (max-width: 520px) {
   .nav {
+    height: auto;
     gap: 10px;
+    padding: 22px 0 12px;
   }
 
   .brand {
+    flex: 1 1 auto;
     min-width: 0;
+    max-width: calc(100% - 92px);
     gap: 8px;
   }
 
@@ -795,7 +799,7 @@ h3 {
   }
 
   .brand-sub {
-    max-width: 120px;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -805,6 +809,8 @@ h3 {
   }
 
   .lang-switch {
+    flex: 0 0 auto;
+    margin-left: auto;
     font-size: 11px;
   }
 
@@ -817,6 +823,21 @@ h3 {
     font-size: 35px;
     line-height: 1.08;
     max-width: 330px;
+  }
+
+  .about-copy,
+  .services-head,
+  .journey-grid,
+  .cta {
+    min-width: 0;
+  }
+
+  .about h2,
+  .services h2,
+  .journey h2,
+  .cta h2 {
+    max-width: 100%;
+    overflow-wrap: normal;
   }
 
   .lead {
