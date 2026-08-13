@@ -784,13 +784,13 @@ h3 {
   .nav {
     height: auto;
     gap: 10px;
-    padding: 22px 0 12px;
+    padding: 22px 86px 12px 0;
   }
 
   .brand {
     flex: 1 1 auto;
     min-width: 0;
-    max-width: calc(100% - 92px);
+    max-width: 100%;
     gap: 8px;
   }
 
@@ -809,8 +809,10 @@ h3 {
   }
 
   .lang-switch {
+    position: absolute;
+    top: 22px;
+    right: 0;
     flex: 0 0 auto;
-    margin-left: auto;
     font-size: 11px;
   }
 
@@ -836,8 +838,8 @@ h3 {
   .services h2,
   .journey h2,
   .cta h2 {
-    max-width: 100%;
-    overflow-wrap: normal;
+    max-width: calc(100vw - 36px);
+    overflow-wrap: anywhere;
   }
 
   .lead {
