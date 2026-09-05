@@ -1,284 +1,175 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#1b0d13" />
-    <title>Dr Meriem Hsairi - Chirurgie & Médecine Esthétique</title>
-    <meta
-      name="description"
-      content="Présentation premium de Dr Meriem Hsairi, chirurgie générale et médecine esthétique."
-    />
-    <link rel="canonical" href="https://dr-meriem-hsairi.vercel.app/" />
-    <link rel="alternate" hreflang="fr" href="https://dr-meriem-hsairi.vercel.app/" />
-    <link rel="alternate" hreflang="en" href="https://dr-meriem-hsairi.vercel.app/en/" />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <header class="hero" id="accueil">
-      <div class="shell">
-        <nav class="nav" aria-label="Navigation principale">
-          <a class="brand" href="#accueil" aria-label="Dr Meriem Hsairi">
-            <div class="mh">MH</div>
-            <div>
-              <div class="brand-title">Dr Meriem Hsairi</div>
-              <div class="brand-sub">CHIRURGIENNE GÉNÉRALE · MÉDECINE ESTHÉTIQUE</div>
-            </div>
-          </a>
-          <div class="navlinks">
-            <a href="#accueil">Accueil</a>
-            <a href="#apropos">À propos</a>
-            <a href="#expertise">Chirurgie</a>
-            <a href="#expertise">Médecine Esthétique</a>
-            <a href="#parcours">Technologies</a>
-            <a href="#contact">Contact</a>
-            <a class="nav-cta" href="#contact">Prendre RDV</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17120f" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Dr Malek Bousalem Bouzouita — Médecine Esthétique</title>
+  <meta name="description" content="Concept premium pour Dr Malek Bousalem Bouzouita, médecin esthétique aux Jardins de Carthage, Tunis." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="hero" id="accueil">
+    <div class="noise"></div>
+    <div class="shell">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Dr Malek Bousalem Bouzouita">
+          <div class="monogram" aria-hidden="true">MB</div>
+          <div class="brand-copy">
+            <strong>Dr Malek Bouzouita</strong>
+            <span>MÉDECINE ESTHÉTIQUE · TUNIS</span>
           </div>
-          <div class="lang-switch" aria-label="Choix de langue">
-            <a class="active" href="/" aria-current="page">FR</a>
-            <a href="/en/">EN</a>
-          </div>
-        </nav>
+        </a>
+        <button class="menu-btn" type="button" aria-label="Ouvrir le menu" onclick="toggleMenu()"><span></span><span></span></button>
+        <div class="navlinks" id="navlinks">
+          <a href="#apropos" onclick="closeMenu()">Dr Malek</a>
+          <a href="#expertise" onclick="closeMenu()">Expertise</a>
+          <a href="#experience" onclick="closeMenu()">Parcours</a>
+          <a href="#faq" onclick="closeMenu()">FAQ</a>
+          <a href="#contact" onclick="closeMenu()">Contact</a>
+          <a class="nav-cta" href="https://wa.me/21658012504" target="_blank" rel="noopener">Prendre RDV</a>
+        </div>
+        <div class="lang-switch" aria-label="Choix de langue">
+          <a class="active" href="/">FR</a><a href="/en/">EN</a>
+        </div>
+      </nav>
 
-        <div class="hero-grid">
-          <div class="hero-copy fade">
-            <div class="eyebrow">Expertise · précision · résultats naturels.</div>
-            <h1>La chirurgie <span>au service de votre confiance.</span></h1>
-            <p class="lead">
-              Dr Meriem Hsairi, chirurgienne générale et médecin esthétique, vous
-              accompagne avec une approche sur-mesure, humaine et élégante.
-            </p>
-            <div class="actions">
-              <button class="btn primary" type="button" onclick="openContact()">Prendre RDV</button>
-              <a class="btn outline" href="#expertise">Découvrir les soins</a>
-            </div>
-            <div class="proofs">
-              <div class="proof">
-                <div class="proof-ico">♡</div>
-                <div>
-                  <b>Approche personnalisée</b>
-                  <small>Chaque plan est unique</small>
-                </div>
-              </div>
-              <div class="proof">
-                <div class="proof-ico">✦</div>
-                <div>
-                  <b>Expertise médicale</b>
-                  <small>Chirurgie & esthétique</small>
-                </div>
-              </div>
-              <div class="proof">
-                <div class="proof-ico">◇</div>
-                <div>
-                  <b>Résultats naturels</b>
-                  <small>Harmonie & sécurité</small>
-                </div>
-              </div>
-              <div class="proof">
-                <div class="proof-ico">✓</div>
-                <div>
-                  <b>Suivi sur-mesure</b>
-                  <small>Avant, pendant et après</small>
-                </div>
-              </div>
-            </div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><i></i> Jardins de Carthage · Médecine esthétique</div>
+          <h1>L’esthétique,<br><em>avec justesse.</em></h1>
+          <p class="lead">Une approche personnalisée de la médecine esthétique, pensée pour respecter l’identité du visage, la qualité de la peau et l’équilibre naturel de chaque patient.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://wa.me/21658012504" target="_blank" rel="noopener">Demander une consultation <span>↗</span></a>
+            <a class="btn ghost" href="#expertise">Découvrir les soins</a>
           </div>
-          <div class="hero-image-wrap">
-            <img
-              class="hero-image"
-              src="/assets/dr-meriem-hero.png"
-              alt="Dr Meriem Hsairi dans un cabinet médical premium"
-              fetchpriority="high"
-              decoding="async"
-            />
+          <div class="trust-row">
+            <div><b>01</b><span>Écoute<br>personnalisée</span></div>
+            <div><b>02</b><span>Approche<br>sur-mesure</span></div>
+            <div><b>03</b><span>Résultats<br>harmonieux</span></div>
           </div>
         </div>
-      </div>
-    </header>
 
-    <main>
-      <section class="about" id="apropos">
-        <div class="shell about-grid fade">
-          <div class="consult-card">
-            <img
-              src="/assets/dr-meriem-consultation.png"
-              alt="Dr Meriem Hsairi en consultation"
-              loading="eager"
-              decoding="async"
-            />
-          </div>
-          <div class="about-copy">
-            <div class="kicker">À propos</div>
-            <h2>Une expertise médicale, <span class="pink">une approche humaine.</span></h2>
-            <p>
-              Chirurgienne générale de formation, Dr Meriem Hsairi associe rigueur
-              médicale, écoute et sens esthétique. Son parcours inclut une activité
-              documentée en chirurgie générale à Tunis.
-            </p>
-            <div class="checks">
-              <div class="check">Diplômée / formée en chirurgie générale - Tunisie</div>
-              <div class="check">Pratique de la médecine esthétique</div>
-              <div class="check">Parcours documenté à l'Hôpital Charles Nicolle - Tunis</div>
-              <div class="check">Service de Chirurgie B - Hôpital La Rabta</div>
-              <div class="check">Approche personnalisée et confidentielle</div>
-              <div class="check">Suivi médical attentif</div>
-            </div>
-            <button class="mini-cta" type="button" onclick="openContact()">
-              En savoir plus sur mon parcours
-            </button>
-            <div class="about-stats">
-              <div class="mini-stat">
-                <i>✚</i>
-                <div><b>Chirurgie</b><span>Formation générale</span></div>
-              </div>
-              <div class="mini-stat">
-                <i>✦</i>
-                <div><b>Esthétique</b><span>Approche sur-mesure</span></div>
-              </div>
-              <div class="mini-stat">
-                <i>♡</i>
-                <div><b>Écoute</b><span>Consultation personnalisée</span></div>
-              </div>
-              <div class="mini-stat">
-                <i>✓</i>
-                <div><b>Suivi</b><span>Parcours attentif</span></div>
-              </div>
+        <div class="portrait-stage reveal" aria-label="Emplacement réservé à la photo professionnelle de Dr Malek">
+          <div class="halo halo-a"></div><div class="halo halo-b"></div>
+          <div class="portrait-frame">
+            <div class="portrait-placeholder">
+              <span class="placeholder-monogram">MB</span>
+              <small>Portrait professionnel<br>à intégrer</small>
             </div>
           </div>
+          <div class="floating-card fc-top"><span>✦</span><div><b>Signature</b><small>Naturel · précision · confiance</small></div></div>
+          <div class="floating-card fc-bottom"><span>⌁</span><div><b>Consultation</b><small>Plan esthétique personnalisé</small></div></div>
         </div>
-      </section>
-
-      <section class="services" id="expertise">
-        <div class="shell">
-          <div class="services-head fade">
-            <div class="kicker">Mes spécialités</div>
-            <h2>Chirurgie & Médecine Esthétique <span class="pink">sur-mesure</span></h2>
-            <p>
-              Une présentation claire des grands axes d'expertise. Les actes précis,
-              technologies et indications peuvent être validés avec le Dr avant la
-              mise en ligne définitive.
-            </p>
-          </div>
-          <div class="cards fade">
-            <div class="card">
-              <div class="card-icon">✦</div>
-              <h3>Chirurgie générale</h3>
-              <p>Présentation du parcours chirurgical, de la consultation à l'accompagnement postopératoire.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">◌</div>
-              <h3>Médecine esthétique</h3>
-              <p>Une approche pensée pour préserver l'harmonie, le naturel et la confiance.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">◇</div>
-              <h3>Silhouette</h3>
-              <p>Une section premium dédiée aux solutions corporelles réellement proposées au cabinet.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">♧</div>
-              <h3>Visage</h3>
-              <p>Information esthétique personnalisée selon l'anatomie et les attentes du patient.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">⌁</div>
-              <h3>Consultation</h3>
-              <p>Un premier échange structuré pour comprendre les besoins et définir la meilleure orientation.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">◎</div>
-              <h3>Technologies</h3>
-              <p>Un espace pour valoriser les équipements effectivement utilisés par le Dr.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="journey" id="parcours">
-        <div class="shell journey-grid fade">
-          <div>
-            <div class="kicker">Confiance & parcours</div>
-            <h2>Une présence digitale à la hauteur de <span class="pink">son expertise.</span></h2>
-            <p>
-              Le site a été conçu comme une expérience médicale premium : navigation
-              simple, image rassurante, présentation claire du parcours et accès
-              rapide à la prise de rendez-vous.
-            </p>
-          </div>
-          <div class="journey-panels">
-            <div class="jpanel"><b>01</b><span>Profil médical clair et crédible</span></div>
-            <div class="jpanel"><b>02</b><span>Expérience mobile premium</span></div>
-            <div class="jpanel"><b>03</b><span>Prise de rendez-vous simplifiée</span></div>
-            <div class="jpanel"><b>04</b><span>Sections médicales faciles à valider</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta" id="contact">
-        <div class="fade">
-          <div class="kicker">Prendre rendez-vous</div>
-          <h2>Un accompagnement médical pensé autour de vous.</h2>
-          <p>
-            Les coordonnées, horaires et lien WhatsApp définitifs seront ajoutés
-            après validation par Dr Meriem Hsairi.
-          </p>
-          <button class="btn primary" type="button" onclick="openContact()">Contacter le cabinet</button>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="shell footer-logo-wrap">
-        <img
-          class="footer-logo"
-          src="/assets/dr-meriem-logo.png"
-          alt="Logo Dr Meriem Hsairi"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <div class="shell footer-inner">
-        <div>
-          <strong>MH · Dr Meriem Hsairi</strong><br />
-          <small>Chirurgie générale · Médecine esthétique</small>
-        </div>
-        <div class="footer-side">
-          <div class="footer-lang">
-            <a class="active" href="/" aria-current="page">FR</a>
-            <a href="/en/">EN</a>
-          </div>
-          <small>Concept de présentation - coordonnées et actes précis à valider avec le Dr.</small>
-        </div>
-      </div>
-    </footer>
-
-    <div class="modal" id="modal" onclick="if(event.target===this)closeContact()">
-      <div class="dialog">
-        <div class="kicker">Rendez-vous</div>
-        <h3>Coordonnées à confirmer</h3>
-        <p>
-          Le numéro WhatsApp, le téléphone, l'adresse du cabinet et les horaires
-          seront activés dès validation par Dr Meriem Hsairi.
-        </p>
-        <button class="btn primary" type="button" onclick="closeContact()">Fermer</button>
       </div>
     </div>
+    <div class="scroll-cue"><span></span> Découvrir</div>
+  </header>
 
-    <script>
-      function openContact() {
-        document.getElementById("modal").classList.add("show");
-      }
-      function closeContact() {
-        document.getElementById("modal").classList.remove("show");
-      }
-      const io = new IntersectionObserver(
-        (entries) =>
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("on");
-          }),
-        { threshold: 0.12 }
-      );
-      document.querySelectorAll(".fade").forEach((el) => io.observe(el));
-    </script>
-  </body>
+  <main>
+    <section class="intro" id="apropos">
+      <div class="shell intro-grid reveal">
+        <div class="section-label">01 · DR MALEK</div>
+        <div class="intro-main">
+          <p class="big-quote">« Sublimer sans effacer ce qui vous rend unique. »</p>
+          <div class="intro-columns">
+            <p>Dr Malek Bousalem Bouzouita exerce en médecine esthétique à Tunis. Son univers digital doit refléter la même exigence que l’expérience au cabinet&nbsp;: <strong>clarté, confiance, élégance et accompagnement personnalisé.</strong></p>
+            <p>Ce concept met l’accent sur une information simple, un parcours patient fluide et une présentation premium des actes proposés, avec un accès direct à la prise de rendez-vous.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="expertise" id="expertise">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><div class="section-label light">02 · EXPERTISE</div><h2>Des soins pensés<br><em>autour de vous.</em></h2></div>
+          <p>Une sélection structurée à partir des actes publiquement associés au cabinet. Les indications et protocoles définitifs seront validés avec Dr Malek avant mise en ligne finale.</p>
+        </div>
+        <div class="service-grid reveal">
+          <article class="service-card featured"><span class="service-no">01</span><div class="service-symbol">◌</div><h3>Injectables & harmonie du visage</h3><p>Acide hyaluronique, toxine botulique et protocoles adaptés à l’anatomie et aux objectifs de chaque patient.</p><div class="tags"><span>Acide hyaluronique</span><span>Botox</span><span>Harmonie</span></div></article>
+          <article class="service-card"><span class="service-no">02</span><div class="service-symbol">✦</div><h3>Qualité de peau</h3><p>Des solutions pour la texture, l’éclat et la régénération cutanée.</p><div class="tags"><span>Hydrafacial</span><span>Microneedling</span><span>PRP</span></div></article>
+          <article class="service-card"><span class="service-no">03</span><div class="service-symbol">◎</div><h3>Laser & technologie</h3><p>Protocoles ciblés pour l’épilation, la pigmentation, les cicatrices et le renouvellement cutané.</p><div class="tags"><span>Laser</span><span>Peeling</span><span>Radiofréquence</span></div></article>
+          <article class="service-card"><span class="service-no">04</span><div class="service-symbol">⌁</div><h3>Cheveux</h3><p>Prise en charge esthétique du cuir chevelu et solutions de régénération.</p><div class="tags"><span>PRP cheveux</span><span>Mésothérapie</span><span>Greffe</span></div></article>
+          <article class="service-card"><span class="service-no">05</span><div class="service-symbol">◇</div><h3>Silhouette</h3><p>Approches non chirurgicales destinées au remodelage et à l’amélioration de la silhouette.</p><div class="tags"><span>HIFU</span><span>Cavitation</span><span>EMS</span></div></article>
+          <article class="service-card"><span class="service-no">06</span><div class="service-symbol">♡</div><h3>Consultation personnalisée</h3><p>Un premier échange pour comprendre les attentes, examiner les indications et construire un plan cohérent.</p><div class="tags"><span>Diagnostic</span><span>Plan de soin</span><span>Suivi</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="shell experience-grid reveal">
+        <div class="experience-visual">
+          <div class="visual-card vc-main"><span>MB</span><small>SECOND PORTRAIT / CONSULTATION<br>À INTÉGRER</small></div>
+          <div class="visual-ring"></div>
+          <div class="micro-note">UNE EXPÉRIENCE<br>PLUS HUMAINE</div>
+        </div>
+        <div class="experience-copy">
+          <div class="section-label">03 · PARCOURS PATIENT</div>
+          <h2>Simple. Clair.<br><em>Rassurant.</em></h2>
+          <p class="experience-lead">Le site transforme une audience sociale importante en un parcours patient organisé, sans perdre la proximité de la marque personnelle de Dr Malek.</p>
+          <div class="steps">
+            <div class="step"><b>01</b><div><strong>Découvrir</strong><span>Comprendre les soins et l’approche avant de prendre contact.</span></div></div>
+            <div class="step"><b>02</b><div><strong>Échanger</strong><span>Accès immédiat à WhatsApp ou à une demande de consultation.</span></div></div>
+            <div class="step"><b>03</b><div><strong>Personnaliser</strong><span>La consultation permet d’orienter vers le protocole adapté.</span></div></div>
+            <div class="step"><b>04</b><div><strong>Suivre</strong><span>Un parcours digital qui peut évoluer vers rappels, formulaires et suivi patient.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="shell reveal">
+        <div class="manifesto-line"><span>VISAGE</span><i>✦</i><span>PEAU</span><i>✦</i><span>LASER</span><i>✦</i><span>CHEVEUX</span><i>✦</i><span>SILHOUETTE</span></div>
+        <p>Une identité digitale pensée pour inspirer confiance avant même la première consultation.</p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="shell faq-grid reveal">
+        <div><div class="section-label">04 · FAQ</div><h2>Vos questions,<br><em>simplement.</em></h2><p>Les réponses médicales finales seront relues et validées par Dr Malek avant publication.</p></div>
+        <div class="accordion">
+          <details open><summary>Comment savoir quel soin me convient ? <span>+</span></summary><p>Le choix dépend de votre anatomie, de votre peau, de vos antécédents et de vos objectifs. Une consultation permet d’évaluer l’indication et les alternatives possibles.</p></details>
+          <details><summary>Les résultats sont-ils immédiats ? <span>+</span></summary><p>Cela varie selon l’acte. Certains résultats sont visibles rapidement, tandis que d’autres évoluent progressivement. Le calendrier attendu est expliqué pendant la consultation.</p></details>
+          <details><summary>Combien de séances sont nécessaires ? <span>+</span></summary><p>Le nombre de séances dépend du traitement et de la réponse individuelle. Un protocole personnalisé est défini après évaluation.</p></details>
+          <details><summary>Comment prendre rendez-vous ? <span>+</span></summary><p>Vous pouvez contacter directement le cabinet au +216 58 012 504 ou utiliser le bouton WhatsApp disponible sur le site.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="shell contact-card reveal">
+        <div class="contact-copy">
+          <div class="section-label light">05 · CONTACT</div>
+          <h2>Votre consultation<br><em>commence ici.</em></h2>
+          <p>Pour une demande de rendez-vous ou une première information, contactez le cabinet directement.</p>
+          <div class="contact-actions"><a class="btn primary pale" href="https://wa.me/21658012504" target="_blank" rel="noopener">WhatsApp <span>↗</span></a><a class="btn line" href="tel:+21658012504">+216 58 012 504</a></div>
+        </div>
+        <div class="contact-info">
+          <div><small>ADRESSE</small><strong>Immeuble Al Montazah<br>Jardins de Carthage, Tunis</strong></div>
+          <div><small>SPÉCIALITÉ</small><strong>Médecine esthétique</strong></div>
+          <div><small>HORAIRES</small><strong>À confirmer avec le cabinet</strong></div>
+          <div><small>INSTAGRAM</small><strong>@dr_malek_bouzouita</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <a class="brand footer-brand" href="#accueil"><div class="monogram">MB</div><div class="brand-copy"><strong>Dr Malek Bouzouita</strong><span>MÉDECINE ESTHÉTIQUE · TUNIS</span></div></a>
+      <p>Concept de présentation Kanaevo · Contenus médicaux, coordonnées et actes précis à valider avec Dr Malek avant publication officielle.</p>
+      <div class="footer-links"><a href="/">FR</a><a href="/en/">EN</a><a href="https://www.instagram.com/dr_malek_bouzouita/" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
+    function closeMenu(){document.getElementById('navlinks').classList.remove('open')}
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details').forEach(o=>{if(o!==d)o.open=false})}));
+  </script>
+</body>
 </html>
